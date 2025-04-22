@@ -10,11 +10,11 @@ const characters = [
 
 
 const characterImages = {
-   'Lyra': ['./imagens/Lyra.png', './imagens/Lyra.png'],
-   'Orion': ['./imagens/Orion.png', './imagens/Orion.png'],
-   'windy': ['./imagens/windy.png', './imagens/windy.png'],
-   'Sky': ['./imagens/Sky.png', './imagens/Sky.png'],
-   'Cloud': ['./imagens/Cloud.png', './imagens/Cloud.png'],
+   'Lyra': ['../imagens/Lyra.png', '../imagens/Lyra.png'],
+   'Orion': ['../imagens/Orion.png', '../imagens/Orion.png'],
+   'windy': ['../imagens/windy.png', '../imagens/windy.png'],
+   'Sky': ['../imagens/Sky.png', '../imagens/Sky.png'],
+   'Cloud': ['../imagens/Cloud.png', '../imagens/Cloud.png'],
 };
 const characterDescriptions = {
    'Lyra': 'Lyra é uma jovem de espírito forte e coração inabalável. Apesar de ser a irmã mais nova de Orion, ela carrega dentro de si uma determinação que muitos considerariam surpreendente. Com seus cabelos platinados, um contraste marcante com sua pele negra, ela possui uma beleza única e destemida. Nada a detém quando se trata de proteger a sua família, e essa força se reflete em sua personalidade corajosa. Namorada de Cloud, Lyra não apenas ama o rapaz, mas também luta incessantemente para libertá-lo das amarras da vida que ele não escolheu. Ela sabe que a prisão que ele enfrenta é maior do que qualquer cadeia física — é uma prisão imposta pelas expectativas de sua mãe, pelas obrigações que ele não deseja cumprir. Para Lyra, sua missão é clara: salvar Cloud, lutar contra o sistema que os mantém aprisionados e, acima de tudo, fazer o que for necessário para que sua família tenha a liberdade de viver como bem entender.',
