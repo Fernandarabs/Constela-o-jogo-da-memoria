@@ -9,7 +9,7 @@ const characters = [
 ];
 
 
-const characterImages = {
+const characterImagens = {
    'Lyra': ['/imagens/Lyra.png', '/imagens/Lyra.png'],
    'Orion': ['/imagens/Orion.png', '/imagens/Orion.png'],
    'windy': ['/imagens/windy.png', '/imagens/windy.png'],
@@ -81,7 +81,7 @@ const createCard = (character, image) => {
    const card = createElement('div', 'card');
    const front = createElement('div', 'face front');
    const back = createElement('div', 'face back');
-   front.style.backgroundImage = `url('../imagens/${image}')`;
+   front.style.backgroundImagens = `url('../imagens/${image}')`;
    card.appendChild(front);
    card.appendChild(back);
    card.addEventListener('click', revealCard);
