@@ -9,11 +9,11 @@ const characters = [
 ];
 
 const characterImages = {
-   'Lyra': ['Lyra.png', 'Lyra.png'],
-   'Orion': ['Orion.png', 'Orion.png'],
-   'windy': ['windy.png', 'windy.png'],
-   'Sky': ['Sky.png', 'Sky.png'],
-   'Cloud': ['Cloud.png', 'Cloud.png'],
+   'Lyra': ['./imagens/Lyra.png', './imagens/Lyra.png'],
+   'Orion': ['./imagens/Orion.png', './imagens/Orion.png'],
+   'windy': ['./imagens/windy.png', './imagens/windy.png'],
+   'Sky': ['./imagens/Sky.png', './imagens/Sky.png'],
+   'Cloud': ['./imagens/Cloud.png', './imagens/Cloud.png'],
 };
 
 const characterDescriptions = {
