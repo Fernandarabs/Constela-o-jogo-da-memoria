@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 .title-text {
-  font-family: 'Bebas Neue', sans-serif;
+ font-family: "Open Sans", sans-serif ;
   font-size: 48px;
   color: #2e7d32; /* verde escuro */
   text-align: center;
 }
-
-
 main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url('/imagens/fundo.png');
-    background-size: cover;
-    min-height: 50vh;
+    min-height: 100vh; /* Faz com que o elemento ocupe a altura total da tela */
+    
+    background-image: url('./imagens/fundo.png');
+    background-size: cover;        /* Faz a imagem cobrir toda a área */
+    background-repeat: no-repeat;  /* Evita que a imagem se repita */
+    background-position: center;   /* Centraliza a imagem */
+    
     align-items: center;
     justify-content: center;
     padding: 20px 20px 50px;
 }
-
 header {
     display: flex;
     align-items: center;
@@ -72,7 +73,7 @@ header {
 }
 
 .back {
-    background-image: url('/imagens/fundo\ cartas.png');
+    background-image: url('./imagens/fundo\ cartas.png');
     backface-visibility: hidden;
 }
 
