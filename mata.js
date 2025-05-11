@@ -160,7 +160,8 @@ const createCard = (character, image) => {
 
    const back = createElement('div', 'face back');
 
-   front.style.backgroundImage = `url('./imagens/${image}')`;
+   front.style.backgroundImage = `url('${image}')`;
+
 
    card.appendChild(front);
 
