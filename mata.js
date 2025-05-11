@@ -9,11 +9,11 @@ const characters = [
 ];
 
 const characterImages = {
-   'Lyra': ['../imagens/Lyra.png', '../imagens/Lyra.png'],
-   'Orion': ['../imagens/Orion.png', '../imagens/Orion.png'],
-   'windy': ['../imagens/windy.png', '../imagens/windy.png'],
-   'Sky': ['../imagens/Sky.png', '../imagens/Sky.png'],
-   'Cloud': ['../imagens/Cloud.png', '../imagens/Cloud.png'],
+   'Lyra': ['./imagens/Lyra.png', './imagens/Lyra.png'],
+   'Orion': ['./imagens/Orion.png', './imagens/Orion.png'],
+   'windy': ['./imagens/windy.png', './imagens/windy.png'],
+   'Sky': ['./imagens/Sky.png', './imagens/Sky.png'],
+   'Cloud': ['./imagens/Cloud.png', './imagens/Cloud.png'],
 };
 
 const characterDescriptions = {
@@ -81,7 +81,7 @@ const createCard = (character, image) => {
    const card = createElement('div', 'card');
    const front = createElement('div', 'face front');
    const back = createElement('div', 'face back');
-   front.style.backgroundImage = `url('../imagens/${image}')`;
+   front.style.backgroundImage = `url('./imagens/${image}')`;
    card.appendChild(front);
    card.appendChild(back);
    card.addEventListener('click', revealCard);
