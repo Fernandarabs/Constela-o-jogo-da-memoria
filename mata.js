@@ -16,7 +16,7 @@ const characters = [
 
 
 
-const characterImages = {
+const characterImage = {
 
    'Lyra': ['./imagens/Lyra.png', './imagens/Lyra.png'],
 
@@ -152,7 +152,7 @@ const revealCard = ({ target }) => {
 
 
 
-const createCard = (character, images) => {
+const createCard = (character, image) => {
 
    const card = createElement('div', 'card');
 
@@ -160,7 +160,7 @@ const createCard = (character, images) => {
 
    const back = createElement('div', 'face back');
 
-   front.style.backgroundImage = `url('./imagens/${images}')`;
+   front.style.backgroundImage = `url('./imagens/${image}')`;
 
    card.appendChild(front);
 
@@ -184,9 +184,9 @@ const loadGame = () => {
 
    const duplicateCharacters = characters.flatMap(character => [
 
-       { character, images: characterImages[character][0] },
+       { character, image: characterImage[character][0] },
 
-       { character, images: characterImages[character][1] }
+       { character, image: characterImage[character][1] }
 
    ]);
 
@@ -194,9 +194,9 @@ const loadGame = () => {
 
    const shuffleArray = duplicateCharacters.sort(() => Math.random() - 0.5);
 
-   shuffleArray.forEach(({ character, images }) => {
+   shuffleArray.forEach(({ character, image }) => {
 
-       const card = createCard(character, images);
+       const card = createCard(character, image);
 
        grid.appendChild(card);
 
