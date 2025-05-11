@@ -11,7 +11,7 @@ const characters = [
 const characterImages = {
    'Lyra': ['../imagens/Lyra.png', '../imagens/Lyra.png'],
    'Orion': ['../imagens/Orion.png', '../imagens/Orion.png'],
-   'windy': ['../imagens*windy.png', '../imagens/windy.png'],
+   'windy': ['../imagens/windy.png', '../imagens/windy.png'],
    'Sky': ['../imagens/Sky.png', '../imagens/Sky.png'],
    'Cloud': ['../imagens/Cloud.png', '../imagens/Cloud.png'],
 };
