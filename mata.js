@@ -75,7 +75,7 @@ const revealCard = ({ target }) => {
    }
 }
 
-const createCard = (character, imagens) => {
+const createCard = (character, images) => {
    const card = createElement('div', 'card');
    const front = createElement('div', 'face front');
    const back = createElement('div', 'face back');
