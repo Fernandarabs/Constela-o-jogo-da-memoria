@@ -7,7 +7,7 @@ const characters = [
    'Cloud',
 ];
 
-const characterImagens = {
+const characterImages = {
    'Lyra': ['./imagens/Lyra.png', './imagens/Lyra.png'],
    'Orion': ['./imagens/Orion.png', './imagens/Orion.png'],
    'windy': ['./imagens/windy.png', './imagens/windy.png'],
@@ -79,7 +79,7 @@ const createCard = (character, imagens) => {
    const card = createElement('div', 'card');
    const front = createElement('div', 'face front');
    const back = createElement('div', 'face back');
-   front.style.backgroundImagens = `url('./imagens/${imagens}')`;
+   front.style.backgroundImages = `url('./imagens/${images}')`;
    card.appendChild(front);
    card.appendChild(back);
    card.addEventListener('click', revealCard);
@@ -91,13 +91,13 @@ const loadGame = () => {
    if (gameLoaded) return;
 
    const duplicateCharacters = characters.flatMap(character => [
-       { character, imagens: characterImagens[character][0] },
-       { character, imagens: characterImagens[character][1] }
+       { character, images: characterImages[character][0] },
+       { character, images: characterImages[character][1] }
    ]);
 
    const shuffleArray = duplicateCharacters.sort(() => Math.random() - 0.5);
-   shuffleArray.forEach(({ character, imagens }) => {
-       const card = createCard(character, imagens);
+   shuffleArray.forEach(({ character, images }) => {
+       const card = createCard(character, images);
        grid.appendChild(card);
    });
 
